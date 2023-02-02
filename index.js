@@ -33,6 +33,7 @@ document.querySelectorAll(".charKey").forEach(function (charKeyBtn) {
 
 document.getElementById("equal").addEventListener("click", calculate);
 
+/* funcao eval e  o aviso de erro  que sera implementado futuramente   */
 function calculate() {
   resultado.value = "ERROR";
   resultado.classList.add("error");
@@ -40,3 +41,8 @@ function calculate() {
   resultado.value = result;
   resultado.classList.remove("error");
 }
+/* botão clear */
+document.getElementById("clear").addEventListener("click", function () {
+  input.value = "";
+  input.focus();
+});
