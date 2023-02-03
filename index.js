@@ -46,3 +46,17 @@ document.getElementById("clear").addEventListener("click", function () {
   input.value = "";
   input.focus();
 });
+/*  tecla enter, backspace e limitacao de teclas */
+input.addEventListener("keydown", function (ev) {
+  ev.preventDefault();
+  if (allowedKeys.includes(ev.key)) {
+    input.value += ev.key;
+    return;
+  }
+  if (ev.key === "Backspace") {
+    input.value = input.value.slice(0, -1);
+  }
+  if (ev.key === "Enter") {
+    calculate();
+  }
+});
