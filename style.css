@@ -5,9 +5,9 @@
 }
 
 :root {
-  --bg-color: rgb(14, 181, 247);
+  --bg-color: rgb(0, 0, 0);
   --font-color: rgb(247, 135, 7);
-  --border-color: rgb(247, 7, 207);
+  --border-color: rgb(255, 255, 255);
 }
 
 .title {
@@ -33,7 +33,7 @@ main {
 }
 button {
   background-color: var(--font-color);
-  border: 1;
+  border: 1, white;
   border-radius: 0.25rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
